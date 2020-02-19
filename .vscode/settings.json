@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/d03780c2-95ba-4d1a-8f9a-d22e0a437f38/resourceGroups/RaduResources/providers/Microsoft.Web/sites/communicom-client",
+    "appService.deploySubpath": ""
+}
