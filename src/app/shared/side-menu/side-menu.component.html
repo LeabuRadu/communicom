@@ -1,0 +1,18 @@
+<mat-nav-list class="side-menu-items">
+    <a mat-list-item (click)="redirectTo('/home')"  [class.active]="selectedItem == '/home'">
+      <mat-icon>dashboard</mat-icon> Home
+    </a>
+    <a mat-list-item (click)="redirectTo('/login')" [class.active]="selectedItem == '/login'">
+      <mat-icon>content_paste</mat-icon> Login
+    </a>
+    <!-- <a mat-list-item (click)="redirectTo('/evenimente')" [class.active]="selectedItem == '/evenimente'">
+      <mat-icon>library_books</mat-icon> Evenimente
+    </a>
+    <a mat-list-item (click)="redirectTo('/surse')" [class.active]="selectedItem == '/surse'">
+      <mat-icon>settings_system_daydream</mat-icon> Surse
+    </a>
+    <a mat-list-item (click)="logout()" >
+      <mat-icon>exit_to_app</mat-icon> Iesire din cont
+    </a> -->
+  </mat-nav-list>
+  

@@ -1,2 +1,17 @@
-<h1>Angular Rocks For Everybody, Specially for you my friend</h1>
-<app-login ></app-login>
+<!-- Toolbar -->
+<mat-toolbar #toolbar color="primary" class="header">
+    <button type="button" aria-label="Toggle sidenav" *ngIf="showNav" mat-icon-button (click)="toggleSideNav()"
+      id="hamMenu">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <div id="title"> Angular</div>
+</mat-toolbar>
+  
+  <mat-sidenav-container>
+    <mat-sidenav #sidenav [mode]="isBiggerScreen() ? 'side' : 'over'" [(opened)]="opened" [fixedInViewport]="true" *ngIf="showNav"
+      [fixedTopGap]>
+    <app-side-menu></app-side-menu>
+    </mat-sidenav>
+    <router-outlet></router-outlet>
+  </mat-sidenav-container>
+  

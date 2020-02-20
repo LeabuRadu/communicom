@@ -1,0 +1,14 @@
+.side-menu-items{
+    padding-top: 60px !important
+}
+.is-active{
+    color: #dd0000 !important;
+    text-decoration: underline
+}
+.mat-list-item.active{
+      color: red
+ }
+
+.mat-drawer.mat-drawer-side{
+    background-color: blueviolet!important;
+}
